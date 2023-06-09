@@ -1,0 +1,18 @@
+<div class="chip-container">
+  <div class="chip">
+    <h2>{{name}}:</h2>
+  </div>
+</div>
+
+<div class="roulette-container">
+  <canvas id="canvas">
+    Your browser does not support the HTML5 canvas tag.
+  </canvas>
+</div>
+
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script>
+  window.roundName = "{{name}}"
+  window.roundOptions = "{{options}}".split(",")
+</script>
+<script src="/app.js" defer></script>
